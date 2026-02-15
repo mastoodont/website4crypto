@@ -1,0 +1,2113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Contract Audit Services | Professional Blockchain Security Audits</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional smart contract audit services for DeFi, NFT, and Web3 projects. Expert blockchain security audits by certified professionals. Fast turnaround, comprehensive reports.">
+    <meta name="keywords" content="smart contract audit, blockchain security, DeFi audit, NFT security, Web3 audit, Solidity audit, smart contract security, blockchain audit services, cryptocurrency security, ethereum audit">
+    <meta name="author" content="Audit Smart Contracts">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Smart Contract Audit Services | Professional Blockchain Security">
+    <meta property="og:description" content="Secure your blockchain projects with professional smart contract audits. Expert analysis, fast turnaround, comprehensive security reports.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://auditsmartcontracts.com">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smart Contract Audit Services">
+    <meta name="twitter:description" content="Professional blockchain security audits for DeFi, NFT, and Web3 projects.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://auditsmartcontracts.com">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Audit Smart Contracts",
+      "description": "Professional smart contract security audit services for blockchain projects",
+      "url": "https://auditsmartcontracts.com",
+      "email": "mastoodont@yahoo.com",
+      "areaServed": "Worldwide",
+      "serviceType": "Blockchain Security Audit"
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary: #00ff88;
+            --secondary: #0066ff;
+            --dark: #0a0e17;
+            --darker: #050810;
+            --light: #e8f5ff;
+            --accent: #ff0066;
+            --text: #d4e4ff;
+            --text-dim: #8899bb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--darker);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animated background */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.03;
+            background-image: 
+                repeating-linear-gradient(0deg, transparent, transparent 2px, var(--primary) 2px, var(--primary) 4px),
+                repeating-linear-gradient(90deg, transparent, transparent 2px, var(--primary) 2px, var(--primary) 4px);
+            background-size: 50px 50px;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .gradient-orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.15;
+            z-index: 0;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .orb-1 {
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, var(--primary), transparent);
+            top: -200px;
+            right: -200px;
+            animation-delay: 0s;
+        }
+
+        .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, var(--secondary), transparent);
+            bottom: -150px;
+            left: -150px;
+            animation-delay: 5s;
+        }
+
+        .orb-3 {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, var(--accent), transparent);
+            top: 50%;
+            left: 50%;
+            animation-delay: 10s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(50px, -50px) scale(1.1); }
+            50% { transform: translate(-30px, 30px) scale(0.9); }
+            75% { transform: translate(40px, 20px) scale(1.05); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header with Logo */
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.1);
+            animation: slideDown 0.8s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            animation: logoFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .logo-icon svg {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 0 10px rgba(0, 255, 136, 0.5));
+        }
+
+        .shield-outer {
+            fill: none;
+            stroke: var(--primary);
+            stroke-width: 2;
+            animation: pulseStroke 2s ease-in-out infinite;
+        }
+
+        .shield-inner {
+            fill: url(#shieldGradient);
+            opacity: 0.8;
+        }
+
+        .shield-check {
+            fill: var(--primary);
+            animation: checkPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulseStroke {
+            0%, 100% { stroke-opacity: 1; }
+            50% { stroke-opacity: 0.5; }
+        }
+
+        @keyframes checkPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.02em;
+            display: inline-block;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0 6rem;
+            text-align: center;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 4.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--text-dim);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--dark);
+            padding: 1.2rem 2.5rem;
+            border: none;
+            border-radius: 12px;
+            font-family: 'Syne', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+            animation: fadeInUp 1s ease-out 0.8s both;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 255, 136, 0.5);
+        }
+
+        .sample-report-btn {
+            background: transparent;
+            color: var(--primary);
+            padding: 1.2rem 2.5rem;
+            border: 2px solid var(--primary);
+            border-radius: 12px;
+            font-family: 'Syne', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.15), inset 0 0 20px rgba(0, 255, 136, 0.03);
+            animation: fadeInUp 1s ease-out 1s both;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-left: 1rem;
+        }
+
+        .sample-report-btn:hover {
+            background: rgba(0, 255, 136, 0.08);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.35), inset 0 0 30px rgba(0, 255, 136, 0.06);
+            transform: translateY(-3px);
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .sample-report-btn {
+                margin-left: 0;
+                margin-top: 1rem;
+                display: inline-flex;
+            }
+        }
+
+        /* Stats Section */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 4rem 0;
+            animation: fadeInUp 1s ease-out 1s both;
+        }
+
+        .stat-card {
+            background: rgba(0, 255, 136, 0.03);
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            background: rgba(0, 255, 136, 0.05);
+            border-color: rgba(0, 255, 136, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-family: 'Syne', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 6rem 0;
+        }
+
+        h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 4rem;
+            letter-spacing: -0.02em;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.03), rgba(0, 102, 255, 0.03));
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+        }
+
+        .feature-card:hover {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.08), rgba(0, 102, 255, 0.08));
+            border-color: var(--primary);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 255, 136, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .feature-card h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .feature-card p {
+            color: var(--text-dim);
+            line-height: 1.7;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 6rem 0;
+            background: linear-gradient(180deg, transparent, rgba(0, 255, 136, 0.02), transparent);
+        }
+
+        .process-steps {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .process-step {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 2rem;
+            align-items: start;
+            opacity: 0;
+            animation: fadeInRight 0.8s ease-out forwards;
+        }
+
+        .process-step:nth-child(1) { animation-delay: 0.2s; }
+        .process-step:nth-child(2) { animation-delay: 0.4s; }
+        .process-step:nth-child(3) { animation-delay: 0.6s; }
+        .process-step:nth-child(4) { animation-delay: 0.8s; }
+
+        @keyframes fadeInRight {
+            from { transform: translateX(-30px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--dark);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+        }
+
+        .step-content h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content p {
+            color: var(--text-dim);
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 6rem 0;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: rgba(0, 255, 136, 0.03);
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        .pricing-card.featured {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 102, 255, 0.1));
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 255, 136, 0.2);
+        }
+
+        .pricing-card.featured:hover {
+            transform: translateY(-10px) scale(1.05);
+        }
+
+        .plan-name {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .plan-price {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .plan-period {
+            color: var(--text-dim);
+            margin-bottom: 2rem;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .plan-features li {
+            padding: 0.5rem 0;
+            color: var(--text-dim);
+        }
+
+        .plan-features li::before {
+            content: "✓ ";
+            color: var(--primary);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 6rem 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            background: rgba(0, 255, 136, 0.03);
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(0, 255, 136, 0.05);
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item h3 {
+            font-family: 'Syne', sans-serif;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--primary);
+        }
+
+        /* Rotating decorative rectangle before form */
+        .rotating-rect-wrap {
+            position: relative;
+            height: 80px;
+            margin: 0 auto 2rem;
+            max-width: 420px;
+            pointer-events: none;
+        }
+
+        .rotating-rect {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 260px;
+            height: 48px;
+            border: 1.5px solid rgba(0, 255, 136, 0.22);
+            border-radius: 10px;
+            background: transparent;
+            transform: translate(-50%, -50%) rotate(0deg);
+            animation: rectSpin 14s linear infinite;
+            box-shadow: 0 0 18px rgba(0, 255, 136, 0.07), inset 0 0 14px rgba(0, 102, 255, 0.05);
+        }
+
+        .rotating-rect::before {
+            content: '';
+            position: absolute;
+            inset: 5px;
+            border: 1px solid rgba(0, 102, 255, 0.15);
+            border-radius: 6px;
+        }
+
+        @keyframes rectSpin {
+            0%   { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        /* Contact Form Section with Animation */
+        .contact-section {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.05), rgba(0, 102, 255, 0.05));
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 24px;
+            padding: 3rem;
+            margin: 4rem 0;
+            transition: all 0.4s ease;
+            animation: formFloat 6s ease-in-out infinite;
+        }
+
+        @keyframes formFloat {
+            0%, 100% { 
+                transform: translateY(0);
+                box-shadow: 0 10px 40px rgba(0, 255, 136, 0.1);
+            }
+            50% { 
+                transform: translateY(-10px);
+                box-shadow: 0 20px 60px rgba(0, 255, 136, 0.2);
+            }
+        }
+
+        .contact-section:hover {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.08), rgba(0, 102, 255, 0.08));
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .form-group:nth-child(2) { animation-delay: 0.1s; }
+        .form-group:nth-child(3) { animation-delay: 0.2s; }
+        .form-group:nth-child(4) { animation-delay: 0.3s; }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(0, 255, 136, 0.03);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 12px;
+            color: var(--text);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(0, 255, 136, 0.05);
+            box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .checkbox-group {
+            margin: 2rem 0;
+            animation: fadeInUp 0.6s ease-out 0.4s backwards;
+        }
+
+        .checkbox-wrapper {
+            margin-bottom: 1rem;
+        }
+
+        .checkbox-wrapper input[type="checkbox"] {
+            margin-right: 0.5rem;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .checkbox-label {
+            color: var(--text);
+            cursor: pointer;
+        }
+
+        .checkbox-label a {
+            color: var(--primary);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .error-message {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+            animation: shake 0.3s ease;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.2rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--dark);
+            border: none;
+            border-radius: 12px;
+            font-family: 'Syne', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+            animation: fadeInUp 0.6s ease-out 0.5s backwards, buttonPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes buttonPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(0, 255, 136, 0.5);
+        }
+
+        .submit-btn:active {
+            transform: translateY(-1px) scale(1);
+        }
+
+        /* Blog Section */
+        .blog-section {
+            padding: 6rem 0;
+            background: linear-gradient(180deg, transparent, rgba(0, 255, 136, 0.02), transparent);
+        }
+
+        .blog-section h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .blog-card {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.03), rgba(0, 102, 255, 0.03));
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            border-radius: 20px;
+            padding: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .blog-card:hover {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.08), rgba(0, 102, 255, 0.08));
+            border-color: var(--primary);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 255, 136, 0.2);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .blog-card:hover .blog-image::before {
+            left: 100%;
+        }
+
+        .blog-content {
+            padding: 2rem;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        .blog-category {
+            background: rgba(0, 255, 136, 0.1);
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .blog-date {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .blog-card h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text);
+            line-height: 1.3;
+        }
+
+        .blog-card p {
+            color: var(--text-dim);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .read-more {
+            color: var(--primary);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+        }
+
+        .blog-card:hover .read-more {
+            gap: 1rem;
+        }
+
+        .read-more::after {
+            content: '→';
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(5, 8, 16, 0.95);
+            z-index: 1000;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: var(--dark);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 700px;
+            width: 100%;
+            position: relative;
+            animation: slideUp 0.4s ease;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--text);
+            font-size: 2rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: var(--primary);
+        }
+
+        .modal-content h2 {
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .modal-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-dim);
+            line-height: 1.8;
+        }
+
+        .modal-content strong {
+            color: var(--primary);
+        }
+
+        /* Pricing card selection */
+        .pricing-card {
+            cursor: pointer;
+        }
+
+        .pricing-card.selected {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.15), rgba(0, 102, 255, 0.15));
+            box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.3), 0 20px 60px rgba(0, 255, 136, 0.3);
+        }
+
+        .pricing-card.selected .plan-name::after {
+            content: ' ✓';
+            color: var(--primary);
+        }
+
+        .pricing-card.featured.selected {
+            transform: translateY(-10px) scale(1.05);
+        }
+
+        .selected-plan-field {
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.5s ease-out;
+        }
+
+        .selected-plan-badge {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 102, 255, 0.1));
+            border: 1px solid rgba(0, 255, 136, 0.4);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            color: var(--primary);
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+        }
+
+        .selected-plan-badge .badge-label {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 400;
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        .selected-plan-badge .badge-clear {
+            background: none;
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            padding: 0.3rem 0.7rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: 'JetBrains Mono', monospace;
+            transition: all 0.3s ease;
+        }
+
+        .selected-plan-badge .badge-clear:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Blog article modal */
+        .article-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(5, 8, 16, 0.97);
+            z-index: 1000;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .article-modal.show {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .article-modal-content {
+            background: var(--dark);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+            margin: 2rem auto;
+            animation: slideUp 0.4s ease;
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.1);
+        }
+
+        .article-meta-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        .article-modal-content h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            text-align: left;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+            line-height: 1.3;
+        }
+
+        .article-body h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 2rem 0 1rem;
+        }
+
+        .article-body p {
+            color: var(--text-dim);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-body ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: var(--text-dim);
+            line-height: 1.9;
+        }
+
+        .article-body ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-body ul li::marker {
+            color: var(--primary);
+        }
+
+        .article-body code {
+            background: rgba(0, 255, 136, 0.08);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 4px;
+            padding: 0.2rem 0.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+
+        .article-body .code-block {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 255, 136, 0.15);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--primary);
+            overflow-x: auto;
+            line-height: 1.7;
+        }
+
+        .article-body .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.05), rgba(0, 102, 255, 0.05));
+            border-left: 3px solid var(--primary);
+            border-radius: 0 12px 12px 0;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            color: var(--text);
+        }
+
+        @media (max-width: 768px) {
+            .article-modal-content {
+                padding: 2rem;
+                margin: 1rem auto;
+            }
+            .article-modal-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 255, 136, 0.03);
+            border-top: 1px solid rgba(0, 255, 136, 0.1);
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 6rem;
+        }
+
+        footer p {
+            color: var(--text-dim);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-step {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .step-number {
+                margin: 0 auto 1rem;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-section {
+                padding: 2rem;
+            }
+
+            .modal-content {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path class="shield-outer" d="M50 10 L80 25 L80 55 Q80 75 50 90 Q20 75 20 55 L20 25 Z"/>
+                        <path class="shield-inner" d="M50 15 L75 28 L75 53 Q75 70 50 83 Q25 70 25 53 L25 28 Z"/>
+                        <path class="shield-check" d="M40 50 L47 57 L62 40" stroke="var(--primary)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(0, 3)"/>
+                    </svg>
+                </div>
+                <span class="logo">AUDIT SMART CONTRACTS</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>
+                    Secure Your <span class="gradient-text">Smart Contracts</span><br>
+                    With Expert Audits
+                </h1>
+                <p>
+                    Professional blockchain security audits for DeFi, NFT, and Web3 projects. 
+                    Get comprehensive vulnerability assessments and detailed security reports from certified experts.
+                </p>
+                <a href="#contact" class="cta-button">Get Your Audit Quote →</a>
+                <a href="https://auditsmartcontracts.com/sample-report.pdf" target="_blank" rel="noopener noreferrer" class="sample-report-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download Sample Report
+                </a>
+            </section>
+
+            <section class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Contracts Audited</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">$2B+</div>
+                    <div class="stat-label">Value Secured</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24h</div>
+                    <div class="stat-label">Response Time</div>
+                </div>
+            </section>
+
+            <section class="features">
+                <h2>Why Choose Our Audits?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">🔐</span>
+                        <h3>Comprehensive Security</h3>
+                        <p>Deep analysis of smart contract vulnerabilities, reentrancy attacks, access control issues, and logical flaws using advanced tools and manual review.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">⚡</span>
+                        <h3>Fast Turnaround</h3>
+                        <p>Get your audit report within 3-7 business days. We understand time-to-market is critical for blockchain projects.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📊</span>
+                        <h3>Detailed Reports</h3>
+                        <p>Receive comprehensive documentation with vulnerability classifications, code recommendations, and gas optimization suggestions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">👨‍💻</span>
+                        <h3>Expert Team</h3>
+                        <p>Certified blockchain security professionals with years of experience in Solidity, Rust, and smart contract development.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🛡️</span>
+                        <h3>Post-Audit Support</h3>
+                        <p>Free follow-up review after you fix the issues. We're committed to your project's security success.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 64 64" fill="none" style="display:inline-block;vertical-align:middle;">
+                                <defs>
+                                    <linearGradient id="sigGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00ff88"/>
+                                        <stop offset="100%" style="stop-color:#0066ff"/>
+                                    </linearGradient>
+                                </defs>
+                                <!-- Outer hexagon representing blockchain -->
+                                <polygon points="32,4 56,18 56,46 32,60 8,46 8,18" fill="none" stroke="url(#sigGrad)" stroke-width="2" opacity="0.7"/>
+                                <!-- Inner shield-like shape -->
+                                <polygon points="32,12 48,22 48,38 32,50 16,38 16,22" fill="none" stroke="url(#sigGrad)" stroke-width="1.5" opacity="0.4"/>
+                                <!-- Key symbol body -->
+                                <circle cx="26" cy="32" r="8" fill="none" stroke="url(#sigGrad)" stroke-width="2.5"/>
+                                <circle cx="26" cy="32" r="3.5" fill="url(#sigGrad)" opacity="0.8"/>
+                                <!-- Key shaft -->
+                                <line x1="32" y1="32" x2="50" y2="32" stroke="url(#sigGrad)" stroke-width="2.5" stroke-linecap="round"/>
+                                <!-- Key teeth -->
+                                <line x1="44" y1="32" x2="44" y2="27" stroke="url(#sigGrad)" stroke-width="2.5" stroke-linecap="round"/>
+                                <line x1="49" y1="32" x2="49" y2="27" stroke="url(#sigGrad)" stroke-width="2.5" stroke-linecap="round"/>
+                                <!-- Checkmark badge -->
+                                <circle cx="46" cy="46" r="9" fill="#050810" stroke="url(#sigGrad)" stroke-width="1.5"/>
+                                <polyline points="41,46 44.5,50 51,41" fill="none" stroke="#00ff88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <h3>Crypto &amp; Digital Signature Verification</h3>
+                        <p>We verify the authenticity of cryptographic signatures and digital certificates embedded in your smart contracts — ensuring all on-chain identities, transaction approvals, and signed messages are genuine, tamper-proof, and cryptographically sound.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="process">
+                <h2>Our Audit Process</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Initial Consultation</h3>
+                            <p>We discuss your project requirements, timeline, and specific security concerns. You provide code repository access and documentation.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Automated & Manual Analysis</h3>
+                            <p>Our team uses industry-leading tools (Slither, Mythril, Echidna) combined with manual code review to identify vulnerabilities.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Report Generation</h3>
+                            <p>Comprehensive audit report with severity classifications, detailed findings, PoC exploits, and remediation recommendations.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Review & Re-audit</h3>
+                            <p>You fix the issues, we verify the fixes at no extra cost. Final security certificate issued upon successful completion.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing">
+                <h2>Transparent Pricing</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card" data-plan="Basic — $2,000 (up to 500 lines)" onclick="selectPlan(this)">
+                        <div class="plan-name">Basic</div>
+                        <div class="plan-price">$2,000</div>
+                        <div class="plan-period">Up to 500 lines of code</div>
+                        <ul class="plan-features">
+                            <li>Automated security scan</li>
+                            <li>Manual code review</li>
+                            <li>Basic audit report</li>
+                            <li>Gas optimization tips</li>
+                            <li>5 business days delivery</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card featured" data-plan="Professional — $5,000 (500–2000 lines)" onclick="selectPlan(this)">
+                        <div class="plan-name">Professional</div>
+                        <div class="plan-price">$5,000</div>
+                        <div class="plan-period">500-2000 lines of code</div>
+                        <ul class="plan-features">
+                            <li>Everything in Basic</li>
+                            <li>Comprehensive audit report</li>
+                            <li>Architecture review</li>
+                            <li>Free re-audit after fixes</li>
+                            <li>Security certificate</li>
+                            <li>3 business days delivery</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card" data-plan="Enterprise — Custom price (2000+ lines)" onclick="selectPlan(this)">
+                        <div class="plan-name">Enterprise</div>
+                        <div class="plan-price">Custom</div>
+                        <div class="plan-period">2000+ lines or complex projects</div>
+                        <ul class="plan-features">
+                            <li>Everything in Professional</li>
+                            <li>Economic model review</li>
+                            <li>Dedicated security consultant</li>
+                            <li>Priority support</li>
+                            <li>Multiple re-audits</li>
+                            <li>Custom SLA</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Section -->
+            <section class="blog-section">
+                <h2>Latest Security Insights</h2>
+                <div class="blog-grid">
+                    <div class="blog-card" onclick="openArticle('article1')">
+                        <div class="blog-image">🔒</div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Security</span>
+                            </div>
+                            <h3>Top 10 Smart Contract Vulnerabilities in 2026</h3>
+                            <p>Learn about the most common security flaws discovered in smart contracts this year and how to prevent them in your DeFi project.</p>
+                            <span class="read-more">Read article</span>
+                        </div>
+                    </div>
+
+                    <div class="blog-card" onclick="openArticle('article2')">
+                        <div class="blog-image">⚡</div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Optimization</span>
+                            </div>
+                            <h3>Gas Optimization Techniques for Ethereum Smart Contracts</h3>
+                            <p>Discover proven strategies to reduce gas costs in your Solidity code without compromising security or functionality.</p>
+                            <span class="read-more">Read article</span>
+                        </div>
+                    </div>
+
+                    <div class="blog-card" onclick="openArticle('article3')">
+                        <div class="blog-image">🛡️</div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Best Practices</span>
+                            </div>
+                            <h3>How to Prepare Your Smart Contract for Audit</h3>
+                            <p>A comprehensive checklist to ensure your code is audit-ready, saving time and reducing costs during the review process.</p>
+                            <span class="read-more">Read article</span>
+                        </div>
+                    </div>
+
+                    <div class="blog-card" onclick="openArticle('article4')">
+                        <div class="blog-image">🔍</div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">DeFi</span>
+                            </div>
+                            <h3>Understanding Reentrancy Attacks in DeFi Protocols</h3>
+                            <p>Deep dive into one of the most dangerous vulnerabilities in decentralized finance and how to protect your protocol.</p>
+                            <span class="read-more">Read article</span>
+                        </div>
+                    </div>
+
+                    <div class="blog-card" onclick="openArticle('article5')">
+                        <div class="blog-image">🎯</div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Tutorial</span>
+                            </div>
+                            <h3>Access Control Patterns in Solidity</h3>
+                            <p>Master the implementation of secure access control mechanisms using OpenZeppelin and custom solutions.</p>
+                            <span class="read-more">Read article</span>
+                        </div>
+                    </div>
+
+                    <div class="blog-card" onclick="openArticle('article6')">
+                        <div class="blog-image">💡</div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">News</span>
+                            </div>
+                            <h3>The Future of Smart Contract Security: Trends for 2026</h3>
+                            <p>Explore emerging technologies and methodologies shaping the future of blockchain security auditing.</p>
+                            <span class="read-more">Read article</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2>Get in Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="/cdn-cgi/l/email-protection#b7dad6c4c3d8d8d3d8d9c3f7ced6dfd8d899d4d8da"><span class="__cf_email__" data-cfemail="bed3dfcdcad1d1dad1d0cafec7dfd6d1d190ddd1d3">[email&#160;protected]</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <h3>Telegram</h3>
+                        <a href="https://t.me/auditsmartcontracts" target="_blank" rel="noopener noreferrer">@auditsmartcontracts</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🐦</div>
+                        <h3>Twitter</h3>
+                        <a href="https://twitter.com/auditsmartcontract" target="_blank" rel="noopener noreferrer">@auditsmartcontract</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://linkedin.com/company/audit-smart-contracts" target="_blank" rel="noopener noreferrer">Audit Smart Contracts</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h2>Get a Quote</h2>
+                <div class="rotating-rect-wrap">
+                    <div class="rotating-rect"></div>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="project">Project Details *</label>
+                    <textarea id="project" required placeholder="Tell us about your smart contract project..."></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms" class="checkbox-label">
+                            I agree to the <a href="https://www.isra.om" target="_blank" rel="noopener noreferrer">Terms & Conditions</a> *
+                        </label>
+                    </div>
+                    <div class="error-message" id="termsError">Please accept the Terms & Conditions</div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="privacy" required>
+                        <label for="privacy" class="checkbox-label">
+                            I agree to the <a href="https://www.isra.om" target="_blank" rel="noopener noreferrer">Privacy Policy</a> *
+                        </label>
+                    </div>
+                    <div class="error-message" id="privacyError">Please accept the Privacy Policy</div>
+                </div>
+
+                <button class="submit-btn" onclick="sendEmail()">
+                    Request Audit Quote
+                </button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Audit Smart Contracts. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Terms & Conditions Modal -->
+    <div class="modal" id="termsModal" onclick="if(event.target === this) closeTerms()">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeTerms()">&times;</button>
+            <h2>Terms & Conditions</h2>
+            <p><strong>1. Service Agreement</strong></p>
+            <p>By engaging our smart contract audit services, you agree to provide complete and accurate information about your project, including all relevant code, documentation, and technical specifications.</p>
+            
+            <p><strong>2. Audit Scope</strong></p>
+            <p>Our audit services cover security vulnerabilities, code quality, gas optimization, and best practices review. The scope will be defined in a separate Statement of Work.</p>
+            
+            <p><strong>3. Confidentiality</strong></p>
+            <p>All project information shared with us will be treated as confidential. We will not disclose your code, findings, or any proprietary information without your explicit consent.</p>
+            
+            <p><strong>4. Liability</strong></p>
+            <p>While we perform thorough audits, we cannot guarantee that your smart contract is completely free from vulnerabilities. You acknowledge that blockchain security is an evolving field.</p>
+            
+            <p><strong>5. Payment Terms</strong></p>
+            <p>Payment terms will be outlined in the quote. Typically, 50% is due upfront and 50% upon delivery of the final audit report.</p>
+            
+            <p><strong>6. Intellectual Property</strong></p>
+            <p>You retain all rights to your smart contract code. We retain rights to the audit methodology and report template.</p>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal" id="privacyModal" onclick="if(event.target === this) closePrivacy()">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closePrivacy()">&times;</button>
+            <h2>Privacy Policy</h2>
+            <p><strong>1. Information Collection</strong></p>
+            <p>We collect contact information (name, email, company) and project details that you provide through our contact form. This information is used solely to respond to your audit request.</p>
+            
+            <p><strong>2. Data Usage</strong></p>
+            <p>Your information will be used to:</p>
+            <p>• Provide audit quotes and services<br>
+            • Communicate about your project<br>
+            • Improve our services<br>
+            • Comply with legal obligations</p>
+            
+            <p><strong>3. Data Protection</strong></p>
+            <p>We implement industry-standard security measures to protect your data. All communications and file transfers are encrypted.</p>
+            
+            <p><strong>4. Data Sharing</strong></p>
+            <p>We do not sell, trade, or share your personal information with third parties except as required by law or with your explicit consent.</p>
+            
+            <p><strong>5. Code Confidentiality</strong></p>
+            <p>Smart contract code shared with us is treated with the highest confidentiality. We use secure systems and non-disclosure agreements with all team members.</p>
+            
+            <p><strong>6. Data Retention</strong></p>
+            <p>We retain project data only as long as necessary to complete the audit and for legal/compliance purposes, typically 3 years.</p>
+            
+            <p><strong>7. Your Rights</strong></p>
+            <p>You have the right to access, correct, or delete your personal data at any time by contacting us.</p>
+            
+            <p><strong>8. Contact</strong></p>
+            <p>For privacy concerns, contact us at <a href="/cdn-cgi/l/email-protection#412c2032352e2e252e2f35013820292e2e6f222e2c"><span class="__cf_email__" data-cfemail="d7bab6a4a3b8b8b3b8b9a397aeb6bfb8b8f9b4b8ba">[email&#160;protected]</span></a></p>
+        </div>
+    </div>
+
+    <!-- Article Modals -->
+    <div class="article-modal" id="articleModal" onclick="if(event.target===this)closeArticle()">
+        <div class="article-modal-content">
+            <button class="modal-close" onclick="closeArticle()">&times;</button>
+            <div class="article-header">
+                <div class="article-meta-row" id="articleMeta"></div>
+                <h2 id="articleTitle"></h2>
+            </div>
+            <div class="article-body" id="articleBody"></div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function openTerms() {
+            document.getElementById('termsModal').classList.add('show');
+        }
+
+        function closeTerms() {
+            document.getElementById('termsModal').classList.remove('show');
+        }
+
+        function openPrivacy() {
+            document.getElementById('privacyModal').classList.add('show');
+        }
+
+        function closePrivacy() {
+            document.getElementById('privacyModal').classList.remove('show');
+        }
+
+        function sendEmail() {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const project = document.getElementById('project').value.trim();
+            const terms = document.getElementById('terms').checked;
+            const privacy = document.getElementById('privacy').checked;
+            
+            const termsError = document.getElementById('termsError');
+            const privacyError = document.getElementById('privacyError');
+            
+            termsError.classList.remove('show');
+            privacyError.classList.remove('show');
+            
+            let isValid = true;
+            
+            if (!name || !email || !project) {
+                alert('Please fill in all fields!');
+                return;
+            }
+            
+            if (!terms) {
+                termsError.classList.add('show');
+                isValid = false;
+            }
+            
+            if (!privacy) {
+                privacyError.classList.add('show');
+                isValid = false;
+            }
+            
+            if (!isValid) {
+                return;
+            }
+            
+            const subject = 'Smart Contract Audit Request - ' + name;
+            const body = 
+                'SMART CONTRACT AUDIT REQUEST\n' +
+                '================================\n\n' +
+                'Name: ' + name + '\n' +
+                'Email: ' + email + '\n\n' +
+                'PROJECT DETAILS:\n' +
+                '----------------\n' +
+                project + '\n\n' +
+                '================================\n' +
+                'Terms & Conditions: Accepted\n' +
+                'Privacy Policy: Accepted\n\n' +
+                'Sent from: auditsmartcontracts.com';
+            
+            const mailtoLink = 'mailto:mastoodont@yahoo.com?subject=' + 
+                encodeURIComponent(subject) + 
+                '&body=' + 
+                encodeURIComponent(body);
+            
+            window.location.href = mailtoLink;
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ─── PRICING PLAN SELECTION ─────────────────────────────────────
+        function selectPlan(card) {
+            // Remove selected from all cards
+            document.querySelectorAll('.pricing-card').forEach(c => c.classList.remove('selected'));
+            // Highlight chosen
+            card.classList.add('selected');
+            const planName = card.getAttribute('data-plan');
+            // Scroll to form
+            document.querySelector('.contact-section').scrollIntoView({ behavior: 'smooth' });
+            // Show badge in form
+            setTimeout(() => renderPlanBadge(planName), 400);
+        }
+
+        function renderPlanBadge(planName) {
+            // Remove existing badge if any
+            const existing = document.getElementById('selectedPlanField');
+            if (existing) existing.remove();
+
+            const form = document.querySelector('.contact-section');
+            const firstGroup = form.querySelector('.form-group');
+
+            const fieldDiv = document.createElement('div');
+            fieldDiv.className = 'selected-plan-field';
+            fieldDiv.id = 'selectedPlanField';
+            fieldDiv.innerHTML = `
+                <div class="selected-plan-badge">
+                    <div>
+                        <span class="badge-label">Selected plan:</span>
+                        <span id="planBadgeText">${planName}</span>
+                    </div>
+                    <button class="badge-clear" onclick="clearPlan()">✕ Clear</button>
+                </div>
+                <input type="hidden" id="selectedPlan" value="${planName}">
+            `;
+            form.insertBefore(fieldDiv, firstGroup);
+        }
+
+        function clearPlan() {
+            document.querySelectorAll('.pricing-card').forEach(c => c.classList.remove('selected'));
+            const existing = document.getElementById('selectedPlanField');
+            if (existing) existing.remove();
+        }
+
+        // Patch sendEmail to include selected plan
+        const _origSendEmail = sendEmail;
+        sendEmail = function() {
+            // Override body building to include plan
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const project = document.getElementById('project').value.trim();
+            const terms = document.getElementById('terms').checked;
+            const privacy = document.getElementById('privacy').checked;
+            const planInput = document.getElementById('selectedPlan');
+            const selectedPlan = planInput ? planInput.value : '';
+
+            const termsError = document.getElementById('termsError');
+            const privacyError = document.getElementById('privacyError');
+
+            termsError.classList.remove('show');
+            privacyError.classList.remove('show');
+
+            let isValid = true;
+
+            if (!name || !email || !project) {
+                alert('Please fill in all fields!');
+                return;
+            }
+
+            if (!terms) { termsError.classList.add('show'); isValid = false; }
+            if (!privacy) { privacyError.classList.add('show'); isValid = false; }
+            if (!isValid) return;
+
+            const subject = 'Smart Contract Audit Request - ' + name;
+            const body =
+                'SMART CONTRACT AUDIT REQUEST\n' +
+                '================================\n\n' +
+                'Name: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                (selectedPlan ? 'Selected Plan: ' + selectedPlan + '\n' : '') +
+                '\nPROJECT DETAILS:\n' +
+                '----------------\n' +
+                project + '\n\n' +
+                '================================\n' +
+                'Terms & Conditions: Accepted\n' +
+                'Privacy Policy: Accepted\n\n' +
+                'Sent from: auditsmartcontracts.com';
+
+            const mailtoLink = 'mailto:mastoodont@yahoo.com?subject=' +
+                encodeURIComponent(subject) +
+                '&body=' +
+                encodeURIComponent(body);
+
+            window.location.href = mailtoLink;
+        };
+
+        // ─── BLOG ARTICLE READER ────────────────────────────────────────
+        const articles = {
+            article1: {
+                category: 'Security',
+                date: 'Feb 10, 2026',
+                title: 'Top 10 Smart Contract Vulnerabilities in 2026',
+                body: `
+                    <p>As blockchain adoption continues to accelerate in 2026, smart contract security remains a critical concern. Our audit team has analyzed thousands of contracts this year and compiled the most prevalent vulnerabilities that developers and projects need to address.</p>
+
+                    <h3>1. Reentrancy Attacks</h3>
+                    <p>Despite being one of the oldest known vulnerabilities (famously exploited in The DAO hack of 2016), reentrancy continues to be discovered in production contracts. Attackers exploit contracts that make external calls before updating their internal state, allowing repeated withdrawals before the balance is decremented.</p>
+                    <div class="highlight-box">💡 <strong>Fix:</strong> Always follow the Checks-Effects-Interactions pattern. Update state variables before making external calls, or use OpenZeppelin's <code>ReentrancyGuard</code> modifier.</div>
+
+                    <h3>2. Integer Overflow & Underflow</h3>
+                    <p>While Solidity 0.8.x introduced built-in overflow checks, many legacy contracts and protocols using unsafe math libraries remain vulnerable. Custom assembly code can bypass these protections entirely.</p>
+
+                    <h3>3. Access Control Flaws</h3>
+                    <p>Misconfigured or missing access controls are among the most common critical findings. This includes unprotected initializer functions, missing <code>onlyOwner</code> modifiers on sensitive operations, and overly permissive role assignments.</p>
+
+                    <h3>4. Oracle Manipulation</h3>
+                    <p>DeFi protocols relying on on-chain price oracles (especially single-source AMM spot prices) remain highly susceptible to flash loan attacks that temporarily manipulate prices within a single transaction block.</p>
+
+                    <h3>5. Front-Running & MEV Exploits</h3>
+                    <p>Miner/Validator Extractable Value continues to be a significant concern. Transactions with predictable outcomes and high value can be front-run by bots monitoring the mempool, leading to sandwich attacks and unfavorable execution prices.</p>
+
+                    <h3>6. Delegatecall Vulnerabilities</h3>
+                    <p>Improper use of <code>delegatecall</code> can lead to storage slot collisions and complete contract takeover. Proxy patterns must be implemented carefully with storage layout alignment between proxy and implementation contracts.</p>
+
+                    <h3>7. Unchecked External Call Returns</h3>
+                    <p>Failing to check the return value of low-level calls (<code>call()</code>, <code>send()</code>) can lead to silent failures where a transfer fails but the contract continues executing as if it succeeded.</p>
+
+                    <h3>8. Timestamp Dependence</h3>
+                    <p>Using <code>block.timestamp</code> for critical logic (randomness, time-locked functions) can be manipulated by validators within a small window (~12 seconds on Ethereum), potentially exploiting time-sensitive functions.</p>
+
+                    <h3>9. Insecure Randomness</h3>
+                    <p>On-chain pseudo-randomness using block variables (<code>blockhash</code>, <code>block.difficulty</code>) is predictable and exploitable. Projects requiring verifiable randomness should use Chainlink VRF or similar commit-reveal schemes.</p>
+
+                    <h3>10. Logic Errors in DeFi Calculations</h3>
+                    <p>Complex financial calculations involving percentage fees, compound interest, and token price ratios are prone to precision errors due to integer division truncation. These can accumulate over time, leading to value drain.</p>
+
+                    <div class="highlight-box">🔒 <strong>Key Takeaway:</strong> Many of these vulnerabilities are preventable with proper auditing before deployment. A comprehensive security review saves far more than it costs — a single exploit can drain millions in seconds.</div>
+                `
+            },
+            article2: {
+                category: 'Optimization',
+                date: 'Feb 8, 2026',
+                title: 'Gas Optimization Techniques for Ethereum Smart Contracts',
+                body: `
+                    <p>Gas costs directly impact your users' experience and the competitiveness of your protocol. In 2026, with Ethereum's continued adoption and layer-2 ecosystems maturing, gas efficiency remains both an economic and security concern. Here are proven techniques our auditors recommend.</p>
+
+                    <h3>Use <code>calldata</code> Instead of <code>memory</code> for External Functions</h3>
+                    <p>For external functions that receive array or struct parameters, declaring them as <code>calldata</code> instead of <code>memory</code> avoids an unnecessary copy operation. This alone can save hundreds of gas per call for complex data structures.</p>
+                    <div class="code-block">// ❌ Expensive
+function process(uint256[] memory data) external { ... }
+
+// ✅ Optimized
+function process(uint256[] calldata data) external { ... }</div>
+
+                    <h3>Pack Struct Variables</h3>
+                    <p>EVM storage is organized in 32-byte slots. When struct members are arranged to fit within single slots, you reduce the number of SLOAD/SSTORE operations (one of the most expensive opcodes). Order struct fields from largest to smallest, and group smaller types together.</p>
+
+                    <h3>Use Mappings Over Arrays When Possible</h3>
+                    <p>Arrays require iteration (O(n) gas) for lookups, while mappings provide O(1) constant-time access. For datasets where you need to look up by key rather than iterate in order, mappings are significantly cheaper.</p>
+
+                    <h3>Cache Storage Variables in Memory</h3>
+                    <p>Reading from storage (SLOAD = 100-2100 gas) is far more expensive than reading from memory (MLOAD = 3 gas). If you reference a storage variable multiple times in a function, cache it locally first.</p>
+                    <div class="code-block">// ❌ Multiple SLOADs
+for (uint i = 0; i < users.length; i++) {
+    emit Transfer(users[i], address(this));
+}
+
+// ✅ Single SLOAD, cached in memory
+uint256 len = users.length;
+for (uint i = 0; i < len; i++) {
+    emit Transfer(users[i], address(this));
+}</div>
+
+                    <h3>Use Custom Errors Instead of Revert Strings</h3>
+                    <p>Custom errors (introduced in Solidity 0.8.4) are significantly cheaper than string-based reverts, both in deployment cost and in execution cost when the error is triggered. They also provide better UX for error handling in front-ends.</p>
+
+                    <h3>Unchecked Arithmetic in Safe Contexts</h3>
+                    <p>When you can mathematically prove that an operation cannot overflow (e.g., a loop counter bounded by array length), wrapping it in an <code>unchecked</code> block removes the overflow check, saving gas. Use with extreme care and proper documentation.</p>
+
+                    <h3>Minimize On-Chain Storage</h3>
+                    <p>Storage writes are the most expensive operations in EVM. Consider emitting events for data that doesn't need to be accessed by smart contracts — events are significantly cheaper and readable off-chain via log queries.</p>
+
+                    <div class="highlight-box">⚡ <strong>Benchmark Everything:</strong> Gas optimization must be validated with tests. Use Hardhat Gas Reporter or Foundry's gas snapshots to measure actual savings before and after optimizations.</div>
+                `
+            },
+            article3: {
+                category: 'Best Practices',
+                date: 'Feb 5, 2026',
+                title: 'How to Prepare Your Smart Contract for Audit',
+                body: `
+                    <p>Getting an audit is one of the most important steps before deploying a smart contract that handles real value. But many projects don't realize that preparation quality directly affects audit quality — and cost. Here's how to make your audit as efficient and effective as possible.</p>
+
+                    <h3>✅ Pre-Audit Checklist</h3>
+
+                    <h3>1. Complete Your Code Freeze</h3>
+                    <p>Auditors analyze a specific snapshot of your code. Active development during an audit wastes auditor time and can introduce new issues that weren't reviewed. Freeze your codebase at a specific commit before starting the audit engagement.</p>
+
+                    <h3>2. Write Comprehensive Documentation</h3>
+                    <p>Auditors need to understand your intended behavior before they can identify deviations from it. Provide: a high-level architecture overview, detailed NatSpec comments for every public function, description of the economic model, known limitations or accepted risks, and deployment and initialization sequence.</p>
+
+                    <h3>3. Achieve High Test Coverage</h3>
+                    <p>Aim for 95%+ line coverage and 80%+ branch coverage. Tests serve as executable specifications — they show auditors exactly what behavior you expect. Edge cases exposed by tests often point auditors toward the most critical logic.</p>
+                    <div class="code-block">// Run coverage before submitting for audit
+npx hardhat coverage
+# or
+forge coverage</div>
+
+                    <h3>4. Run Automated Static Analysis</h3>
+                    <p>Run Slither, Mythril, or similar tools yourself first and address any findings. Paying audit rates for things a free tool catches is inefficient. Document any false positives you've intentionally ignored so auditors don't re-investigate them.</p>
+
+                    <h3>5. Clean Up Your Codebase</h3>
+                    <p>Remove commented-out code, placeholder functions, debug logging, and TODO comments. Ensure consistent formatting (run Prettier/solhint). Auditors waste time deciphering messy code that obscures real logic.</p>
+
+                    <h3>6. Identify High-Risk Areas</h3>
+                    <p>Create a document highlighting areas you're most concerned about: complex financial math, multi-contract interactions, upgrade mechanisms, oracle dependencies, and any functionality you're less confident about. This helps auditors allocate time appropriately.</p>
+
+                    <h3>7. Prepare Deployment Scripts</h3>
+                    <p>Document the full deployment sequence including constructor parameters, initialization calls, role assignments, and any post-deployment configuration. Misconfigured deployments have caused major hacks even with well-audited code.</p>
+
+                    <div class="highlight-box">🎯 <strong>Result:</strong> Projects that follow this checklist typically see 30-50% fewer audit findings that are configuration or documentation issues — meaning the audit focuses on real security concerns that matter.</div>
+                `
+            },
+            article4: {
+                category: 'DeFi',
+                date: 'Feb 1, 2026',
+                title: 'Understanding Reentrancy Attacks in DeFi Protocols',
+                body: `
+                    <p>Reentrancy remains one of the most devastating attack vectors in DeFi. Since The DAO hack in 2016 drained 3.6 million ETH, variants of this attack have continued to cost the industry hundreds of millions of dollars. Understanding how reentrancy works is essential for every smart contract developer.</p>
+
+                    <h3>How Reentrancy Works</h3>
+                    <p>A reentrancy attack occurs when an external contract is called before the calling contract finishes updating its state. The external contract can then "re-enter" the calling contract in a recursive loop before the original execution completes.</p>
+                    <div class="code-block">// ❌ VULNERABLE CONTRACT
+contract VulnerableBank {
+    mapping(address => uint) public balances;
+    
+    function withdraw(uint amount) external {
+        require(balances[msg.sender] >= amount);
+        
+        // 1. External call BEFORE state update — DANGEROUS
+        (bool success,) = msg.sender.call{value: amount}("");
+        require(success);
+        
+        // 2. State update happens too late
+        balances[msg.sender] -= amount;
+    }
+}</div>
+
+                    <h3>The Attack Vector</h3>
+                    <p>An attacker deploys a malicious contract with a <code>receive()</code> or <code>fallback()</code> function that calls back into the victim contract's <code>withdraw()</code> function. Since the balance hasn't been decremented yet (step 2 above), each recursive call passes the balance check, draining the contract completely.</p>
+
+                    <h3>Single-Function vs. Cross-Function Reentrancy</h3>
+                    <p>Classic reentrancy attacks re-enter the same function. But cross-function reentrancy is more subtle — an attacker re-enters a different function in the same contract that shares the same state variables, potentially bypassing function-level protections.</p>
+
+                    <h3>Read-Only Reentrancy</h3>
+                    <p>A newer attack variant targets view functions that return stale state mid-execution. If Protocol B reads a price from Protocol A during A's callback execution (before A updates its state), B may act on manipulated data. This is particularly dangerous in lending protocols.</p>
+
+                    <h3>✅ Prevention Strategies</h3>
+                    <div class="code-block">// ✅ FIXED: Checks-Effects-Interactions Pattern
+contract SecureBank {
+    mapping(address => uint) public balances;
+    
+    function withdraw(uint amount) external {
+        require(balances[msg.sender] >= amount); // CHECK
+        balances[msg.sender] -= amount;           // EFFECT
+        (bool success,) = msg.sender.call{value: amount}(""); // INTERACT
+        require(success);
+    }
+}</div>
+
+                    <p>Additionally, use OpenZeppelin's <code>ReentrancyGuard</code> which adds a mutex lock to prevent any reentrant calls, and conduct thorough audits of all external call patterns in your protocol.</p>
+
+                    <div class="highlight-box">⚠️ <strong>Remember:</strong> ERC-777 tokens, ERC-721 with callback hooks (<code>onERC721Received</code>), and ETH transfers via <code>.call()</code> can all trigger reentrancy. Audit every external interaction, not just explicit calls.</div>
+                `
+            },
+            article5: {
+                category: 'Tutorial',
+                date: 'Jan 28, 2026',
+                title: 'Access Control Patterns in Solidity',
+                body: `
+                    <p>Access control is the foundation of smart contract security. Without proper controls, any attacker can call sensitive functions, drain funds, or manipulate protocol parameters. This guide covers modern access control patterns from simple to complex.</p>
+
+                    <h3>Pattern 1: Ownable</h3>
+                    <p>The simplest pattern — a single privileged address (the "owner") can perform administrative operations. OpenZeppelin's <code>Ownable</code> contract is the standard implementation, providing <code>onlyOwner</code> modifier and ownership transfer functions.</p>
+                    <div class="code-block">import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract MyToken is Ownable {
+    function mint(address to, uint amount) external onlyOwner {
+        _mint(to, amount);
+    }
+    
+    function setFee(uint newFee) external onlyOwner {
+        fee = newFee;
+    }
+}</div>
+
+                    <h3>Pattern 2: Role-Based Access Control (RBAC)</h3>
+                    <p>For complex protocols, granular roles prevent a single compromised key from doing catastrophic damage. OpenZeppelin's <code>AccessControl</code> allows defining multiple roles with specific permissions. Follow the principle of least privilege — each role should have only the permissions it absolutely needs.</p>
+                    <div class="code-block">import "@openzeppelin/contracts/access/AccessControl.sol";
+
+contract Protocol is AccessControl {
+    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
+    bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
+    bytes32 public constant GOVERNOR_ROLE = keccak256("GOVERNOR_ROLE");
+    
+    function mint(address to, uint amount) external onlyRole(MINTER_ROLE) { ... }
+    function pause() external onlyRole(PAUSER_ROLE) { ... }
+    function setFee(uint f) external onlyRole(GOVERNOR_ROLE) { ... }
+}</div>
+
+                    <h3>Pattern 3: Multi-Signature Control</h3>
+                    <p>For the highest-value operations, require multiple independent signers to approve actions. Gnosis Safe (now Safe) is the industry standard. Integrate Timelock controllers for protocol governance to give the community time to react to potentially malicious proposals.</p>
+
+                    <h3>Pattern 4: Timelocks</h3>
+                    <p>Even with proper access control, a compromised admin key can be catastrophic. Timelocks enforce a mandatory delay between when a privileged action is proposed and when it can be executed — giving users time to exit before harmful changes take effect.</p>
+
+                    <h3>Common Pitfalls</h3>
+                    <ul>
+                        <li><strong>Unprotected initializers:</strong> In upgradeable contracts, <code>initialize()</code> must be protected with <code>initializer</code> modifier — leaving it unprotected allows anyone to reinitialize and take ownership.</li>
+                        <li><strong>Centralization risk:</strong> A single EOA as owner with no timelock is a single point of failure. Always plan for key rotation and compromise scenarios.</li>
+                        <li><strong>Missing zero-address checks:</strong> Functions that transfer ownership should validate the new owner isn't the zero address.</li>
+                        <li><strong>Two-step ownership transfers:</strong> Use Ownable2Step to prevent accidentally transferring ownership to wrong addresses.</li>
+                    </ul>
+
+                    <div class="highlight-box">🔐 <strong>Security Principle:</strong> Design access control assuming any single key can be compromised. The more valuable the protocol, the more decentralization and delay you should build into privileged operations.</div>
+                `
+            },
+            article6: {
+                category: 'News',
+                date: 'Jan 25, 2026',
+                title: 'The Future of Smart Contract Security: Trends for 2026',
+                body: `
+                    <p>The blockchain security landscape is evolving rapidly. As protocols grow more complex and billions in value flow through smart contracts daily, both attack sophistication and defensive techniques are advancing in parallel. Here's what our security team sees shaping the field in 2026 and beyond.</p>
+
+                    <h3>1. Formal Verification Goes Mainstream</h3>
+                    <p>Formal verification — mathematically proving that a contract behaves exactly as specified under all possible inputs — has historically been expensive and reserved for the most critical code. With tools like Certora Prover, Halmos, and Foundry's formal verification becoming more accessible, we're seeing wider adoption. Expect top protocols to require formal proofs for core invariants alongside traditional audits.</p>
+
+                    <h3>2. AI-Assisted Vulnerability Discovery</h3>
+                    <p>Large language models trained specifically on smart contract vulnerability datasets are becoming genuinely useful for pattern matching and suggesting potential issues. However, AI tools currently have high false-positive rates and miss novel vulnerability classes. The future is AI handling routine pattern detection, freeing human auditors to focus on protocol-level logic and economic attack modeling.</p>
+
+                    <h3>3. Cross-Chain Bridge Security</h3>
+                    <p>Bridge hacks have accounted for the largest DeFi losses historically (Ronin, Wormhole, Nomad combined lost over $1.5B). As multi-chain protocols become the norm, securing cross-chain message passing, validator sets, and bridge liquidity will be among the most critical (and lucrative) areas of security research in 2026.</p>
+
+                    <h3>4. Account Abstraction Attack Surface</h3>
+                    <p>ERC-4337 and native account abstraction introduce new complexity: custom signature validation, paymaster contracts, and bundler economics all create novel attack surfaces. The security community is actively developing frameworks for auditing AA-native applications as adoption accelerates.</p>
+
+                    <h3>5. ZK Circuit Auditing</h3>
+                    <p>Zero-knowledge proof systems power some of the most exciting scaling and privacy solutions (zkEVMs, zk-bridges, private DeFi). But ZK circuits have their own unique vulnerability class — constraint system bugs can allow invalid proofs to pass verification. Specialized ZK auditing is becoming a distinct discipline within blockchain security.</p>
+
+                    <h3>6. On-Chain Monitoring & Incident Response</h3>
+                    <p>Beyond pre-deployment audits, protocols are investing in real-time monitoring systems (Forta, OpenZeppelin Defender, custom Sentinels) that detect anomalous on-chain activity and trigger automatic circuit breakers or alerts. Prevention is the goal, but fast detection and response can limit damage when novel exploits occur.</p>
+
+                    <div class="highlight-box">🔮 <strong>Our Prediction:</strong> The audit-only security model will evolve into continuous security programs — combining pre-deployment auditing, formal verification of invariants, real-time monitoring, and bug bounties as layered defenses for protocols managing significant value.</div>
+                `
+            }
+        };
+
+        function openArticle(id) {
+            const art = articles[id];
+            if (!art) return;
+            document.getElementById('articleMeta').innerHTML =
+                '<span class="blog-category">' + art.category + '</span>' +
+                '<span class="blog-date">📅 ' + art.date + '</span>';
+            document.getElementById('articleTitle').textContent = art.title;
+            document.getElementById('articleBody').innerHTML = art.body;
+            document.getElementById('articleModal').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeArticle() {
+            document.getElementById('articleModal').classList.remove('show');
+            document.body.style.overflow = '';
+        }
+
+        // Close article modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeArticle();
+                closeTerms();
+                closePrivacy();
+            }
+        });
+
+    </script>
+</body>
+</html>
