@@ -808,6 +808,123 @@
     /* ═══════════════════════════════════════════
        RESPONSIVE
     ═══════════════════════════════════════════ */
+    /* ═══════════════════════════════════════════
+       HAMBURGER MENU
+    ═══════════════════════════════════════════ */
+    .nav-hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 38px; height: 38px;
+        background: var(--dark3);
+        border: 1px solid var(--border);
+        border-radius: 9px;
+        cursor: pointer;
+        padding: 0;
+        transition: border-color 0.2s;
+        flex-shrink: 0;
+    }
+    .nav-hamburger:hover { border-color: rgba(12,255,124,0.3); }
+    .nav-hamburger span {
+        display: block;
+        width: 18px; height: 2px;
+        background: var(--text);
+        border-radius: 2px;
+        transition: all 0.25s ease;
+        transform-origin: center;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile nav overlay */
+    .mobile-nav-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(4,7,13,0.7);
+        z-index: 150;
+        backdrop-filter: blur(4px);
+    }
+    .mobile-nav-overlay.show { display: block; }
+
+    /* Mobile nav drawer */
+    .mobile-nav-drawer {
+        display: none;
+        position: fixed;
+        top: 0; right: 0;
+        width: min(280px, 85vw);
+        height: 100dvh;
+        background: var(--dark2);
+        border-left: 1px solid var(--border);
+        z-index: 160;
+        padding: 1.5rem;
+        flex-direction: column;
+        gap: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+    .mobile-nav-drawer.show {
+        display: flex;
+        transform: translateX(0);
+    }
+    .mobile-nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--border);
+    }
+    .mobile-nav-close {
+        width: 34px; height: 34px;
+        background: var(--dark3);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        color: var(--dim);
+        font-size: 1.1rem;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+        transition: all 0.2s;
+    }
+    .mobile-nav-close:hover { border-color: rgba(12,255,124,0.3); color: var(--text); }
+    .mobile-nav-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        flex: 1;
+    }
+    .mobile-nav-links li a {
+        display: block;
+        padding: 0.85rem 1rem;
+        color: var(--dim);
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-weight: 500;
+        border-radius: 10px;
+        transition: all 0.2s;
+    }
+    .mobile-nav-links li a:hover {
+        background: var(--dark3);
+        color: var(--text);
+    }
+    .mobile-nav-cta {
+        display: block;
+        text-align: center;
+        background: var(--green) !important;
+        color: #020e07 !important;
+        padding: 0.9rem 1.5rem !important;
+        border-radius: 10px !important;
+        font-family: 'Syne', sans-serif;
+        font-weight: 700 !important;
+        font-size: 0.9rem !important;
+        text-decoration: none;
+        margin-top: auto;
+    }
+
     @media (max-width: 960px) {
         .features-grid { grid-template-columns: repeat(2, 1fr); }
         .process-steps { grid-template-columns: repeat(2, 1fr); }
@@ -819,23 +936,75 @@
         .stats { grid-template-columns: repeat(2, 1fr); }
         .stat-card:nth-child(2) { border-right: none; }
     }
+    @media (max-width: 768px) {
+        .nav-links { display: none; }
+        .nav-hamburger { display: flex; }
+        .nav-inner { padding: 0.85rem 1.25rem; }
+    }
     @media (max-width: 600px) {
-        h1 { font-size: 2.4rem; }
-        h2 { font-size: 1.75rem; }
+        h1 { font-size: 2.1rem; letter-spacing: -0.03em; }
+        h2 { font-size: 1.6rem; }
+        .container { padding: 0 1rem; }
         .features-grid { grid-template-columns: 1fr; }
         .process-steps { grid-template-columns: 1fr; }
         .process-step::after { display: none; }
         .contact-grid { grid-template-columns: 1fr; }
         .blog-grid { grid-template-columns: 1fr; }
         .stats { grid-template-columns: repeat(2, 1fr); }
-        .nav-links li:not(:last-child) { display: none; }
-        .contact-section { padding: 1.75rem; }
-        .hero { padding: 4rem 0 3rem; }
+        .contact-section { padding: 1.5rem; }
+        .hero { padding: 3.5rem 0 2.5rem; }
+        .hero > p { font-size: 0.95rem; }
+        .hero-buttons { flex-direction: column; align-items: center; }
+        .hero-buttons .cta-button,
+        .hero-buttons .sample-report-btn { width: 100%; justify-content: center; }
+        .modal { padding: 0.75rem; }
+        .modal-content { padding: 1.5rem; border-radius: 16px; }
+        .article-modal { padding: 0.75rem; }
+        .article-modal-content { padding: 1.5rem; margin: 0.5rem auto; border-radius: 16px; }
+        .article-modal-content h2 { font-size: 1.3rem; }
+        .pricing-grid { max-width: 100%; }
+        .pricing-card { padding: 1.5rem; }
+        .plan-price { font-size: 2.4rem; }
+        .stat-number { font-size: 2rem; }
+        .contact-section h2 { font-size: 1.4rem; }
+        .blog-image { height: 90px; }
+        footer p { font-size: 0.78rem; }
+    }
+    @media (max-width: 380px) {
+        h1 { font-size: 1.85rem; }
+        .hero-badge { font-size: 0.65rem; }
+        .stats { grid-template-columns: repeat(2, 1fr); }
     }
 </style>
 </head>
 <body>
     <div class="bg-pattern"></div>
+
+    <!-- Mobile nav overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" onclick="closeMobileNav()"></div>
+
+    <!-- Mobile nav drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+        <div class="mobile-nav-header">
+            <a href="#" class="nav-brand" onclick="closeMobileNav()">
+                <div class="nav-brand-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L20 6V12C20 16.4 16.4 20.2 12 22C7.6 20.2 4 16.4 4 12V6L12 2Z" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M9 12L11 14L15 10" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span class="nav-brand-name">AUDIT<span>SC</span></span>
+            </a>
+            <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#features" onclick="closeMobileNav()">Services</a></li>
+            <li><a href="#process" onclick="closeMobileNav()">Process</a></li>
+            <li><a href="#pricing" onclick="closeMobileNav()">Pricing</a></li>
+            <li><a href="#blog" onclick="closeMobileNav()">Blog</a></li>
+        </ul>
+        <a href="#contact" class="mobile-nav-cta" onclick="closeMobileNav()">Get a Quote →</a>
+    </div>
 
     <nav>
         <div class="nav-inner">
@@ -855,6 +1024,11 @@
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
             </ul>
+            <button class="nav-hamburger" id="navHamburger" onclick="toggleMobileNav()" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -1733,6 +1907,28 @@ contract Protocol is AccessControl {
                 `
             }
         };
+
+        /* ── Mobile nav ── */
+        function toggleMobileNav() {
+            const drawer = document.getElementById('mobileNavDrawer');
+            const overlay = document.getElementById('mobileNavOverlay');
+            const btn = document.getElementById('navHamburger');
+            const isOpen = drawer.classList.contains('show');
+            if (isOpen) {
+                closeMobileNav();
+            } else {
+                drawer.classList.add('show');
+                overlay.classList.add('show');
+                btn.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+        function closeMobileNav() {
+            document.getElementById('mobileNavDrawer').classList.remove('show');
+            document.getElementById('mobileNavOverlay').classList.remove('show');
+            document.getElementById('navHamburger').classList.remove('open');
+            document.body.style.overflow = '';
+        }
 
         function openArticle(id) {
             const art = articles[id];
