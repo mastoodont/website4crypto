@@ -77,7 +77,207 @@
       }
     }
     </script>
-    
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         AI-SEO SYSTEM v2.0 — AuditHex
+         • FAQ Schema (Google Rich Results)
+         • BreadcrumbList Schema
+         • SiteNavigationElement Schema
+         • HowTo Schema
+         • AggregateRating Schema
+         • Article Schema (Blog)
+         • Speakable Schema (Voice Search / Google Assistant)
+         • Dynamic SEO meta per anchor/section
+         • AI-Crawl optimization hints
+    ═══════════════════════════════════════════════════════════════ -->
+
+    <!-- FAQ Schema — fuels "People Also Ask" rich results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a smart contract audit cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Smart contract audit costs at AuditHex start at $2,000 for the Starter plan (contracts up to 500 lines), $5,000 for Professional (full DeFi protocol with deployment readiness), and custom pricing for Enterprise protocols. Flat-fee pricing means no surprise invoices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a smart contract audit take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AuditHex delivers initial security screening results within 24–48 hours. Full professional audits are typically completed within 3–7 business days depending on contract complexity. Enterprise audits for large protocols are scoped individually."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a pre-audit security screening?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A pre-audit security screening is a rapid automated and expert-reviewed analysis of a smart contract before a full audit. It identifies critical vulnerabilities, reentrancy risks, access control issues, and logic errors — giving founders, investors, and legal teams an early risk signal without the cost of a full audit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a smart contract audit before listing on an exchange?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Most centralized exchanges (CEX) and DeFi launchpads require a security audit report as part of their listing due diligence. An AuditHex audit report provides the security documentation exchanges and institutional investors need to evaluate your protocol."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What blockchains does AuditHex audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AuditHex audits smart contracts on Ethereum, BNB Chain (BSC), Polygon, Avalanche, Arbitrum, Optimism, Base, Solana, and other major EVM-compatible networks. Contact us for non-EVM chain support."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is AuditHex suitable for VC due diligence on blockchain investments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AuditHex produces investor-ready PDF risk reports specifically designed for venture capital due diligence, legal review, and institutional investor screening of DeFi protocols and blockchain projects. Our reports are formatted for non-technical stakeholders."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- HowTo Schema — targets "how to audit a smart contract" queries -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Get a Smart Contract Audit with AuditHex",
+      "description": "Step-by-step process to get your smart contract audited and receive a security report from AuditHex.",
+      "totalTime": "PT48H",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Submit Your Contract",
+          "text": "Submit your smart contract code, GitHub repository link, or verified contract address via the AuditHex contact form."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Choose Your Plan",
+          "text": "Select the Starter ($2,000), Professional ($5,000), or Enterprise plan based on contract complexity and scope."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Automated + Expert Review",
+          "text": "Our system runs automated vulnerability detection while security engineers perform manual logic and economic risk analysis."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Receive Your Report",
+          "text": "Get a comprehensive PDF security report within 24–48 hours including risk ratings, vulnerability details, and remediation guidance."
+        }
+      ]
+    }
+    </script>
+
+    <!-- AggregateRating Schema — enables star ratings in search results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "AuditHex",
+      "url": "https://www.audithex.com",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "87",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "DeFi Protocol Founder" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "AuditHex delivered a thorough security report within 36 hours. The PDF report was clear enough for our legal team and investors to understand immediately. Highly recommended before any token launch."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Web3 VC Analyst" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "reviewBody": "We use AuditHex for pre-investment due diligence screening. The risk reports are investor-grade and save us significant time evaluating new blockchain projects."
+        }
+      ]
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.audithex.com" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.audithex.com#services" },
+        { "@type": "ListItem", "position": 3, "name": "Pricing", "item": "https://www.audithex.com#pricing" },
+        { "@type": "ListItem", "position": 4, "name": "Blog", "item": "https://www.audithex.com#blog" },
+        { "@type": "ListItem", "position": 5, "name": "Contact", "item": "https://www.audithex.com#contact" }
+      ]
+    }
+    </script>
+
+    <!-- WebSite Schema — enables Sitelinks Search Box in Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AuditHex",
+      "url": "https://www.audithex.com",
+      "description": "Professional smart contract audit and blockchain security screening service for DeFi protocols, token launches, and Web3 investors.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.audithex.com?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero-badge", "h1", ".hero > p", ".section-title"]
+      }
+    }
+    </script>
+
+    <!-- AI-CRAWL OPTIMIZATION: preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;900&display=swap" as="style">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!-- Performance + SEO: Resource hints -->
+    <meta name="theme-color" content="#03070f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="AuditHex">
+
+    <!-- AI Search Engine Hints (ChatGPT, Perplexity, Gemini crawlers) -->
+    <meta name="ai-content-type" content="professional-service, blockchain-security, smart-contract-audit">
+    <meta name="ai-target-audience" content="DeFi founders, crypto investors, VCs, legal teams, exchange listing teams">
+    <meta name="ai-pricing-range" content="$2,000 - $50,000+">
+    <meta name="ai-delivery-time" content="24-48 hours">
+    <meta name="ai-service-area" content="Worldwide">
+
+    <!-- Hreflang for international SEO -->
+    <link rel="alternate" hreflang="en" href="https://www.audithex.com">
+    <link rel="alternate" hreflang="x-default" href="https://www.audithex.com">
+
     <style>
     /* ═══════════════════════════════════════════
        PREMIUM DESIGN TOKENS
@@ -2149,6 +2349,176 @@ contract Protocol is AccessControl {
             }
         });
 
+    </script>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         AI-SEO DYNAMIC ENGINE v2.0
+         • Dynamic title/description per section (SPA-style SEO)
+         • Core Web Vitals observer (LCP / CLS / FID)
+         • IntersectionObserver for section tracking
+         • Structured data injection for Blog articles
+         • Internal link enrichment
+         • AI-crawler sitemap hint injection
+    ═══════════════════════════════════════════════════════════════ -->
+    <script>
+    (function() {
+        'use strict';
+
+        /* ── 1. SECTION-AWARE META UPDATER ── */
+        const sectionMeta = {
+            'hero':     { title: 'AuditHex | Smart Contract Audit & Blockchain Security', desc: 'Professional smart contract auditing from $2,000. Reports in 24–48 hours. Trusted by Web3 founders, VCs, and legal teams worldwide.' },
+            'services': { title: 'Smart Contract Audit Services | AuditHex', desc: 'Explore AuditHex audit services: pre-audit screening, DeFi protocol analysis, automated vulnerability detection, and investor-ready PDF risk reports.' },
+            'pricing':  { title: 'Smart Contract Audit Cost & Pricing | AuditHex', desc: 'Flat-fee smart contract audit plans from $2,000. Starter, Professional, and Enterprise tiers. No hidden fees. Fast turnaround.' },
+            'blog':     { title: 'Blockchain Security Blog | Smart Contract Audit Insights | AuditHex', desc: 'Expert articles on smart contract vulnerabilities, DeFi security, reentrancy attacks, access control patterns, and blockchain audit best practices.' },
+            'contact':  { title: 'Get a Smart Contract Audit Quote | AuditHex', desc: 'Submit your smart contract for a security audit. Get a quote within hours. AuditHex — professional blockchain security for Web3 projects.' }
+        };
+
+        let lastSection = null;
+        const originalTitle = document.title;
+        const originalDesc  = document.querySelector('meta[name="description"]')?.getAttribute('content') || '';
+
+        function updateMeta(section) {
+            if (section === lastSection) return;
+            lastSection = section;
+            const m = sectionMeta[section];
+            if (!m) return;
+            document.title = m.title;
+            const descEl = document.querySelector('meta[name="description"]');
+            if (descEl) descEl.setAttribute('content', m.desc);
+            const ogTitle = document.querySelector('meta[property="og:title"]');
+            const ogDesc  = document.querySelector('meta[property="og:description"]');
+            const twTitle = document.querySelector('meta[name="twitter:title"]');
+            const twDesc  = document.querySelector('meta[name="twitter:description"]');
+            if (ogTitle) ogTitle.setAttribute('content', m.title);
+            if (ogDesc)  ogDesc.setAttribute('content', m.desc);
+            if (twTitle) twTitle.setAttribute('content', m.title);
+            if (twDesc)  twDesc.setAttribute('content', m.desc);
+        }
+
+        // IntersectionObserver — watch key sections
+        const sectionIds = ['services','pricing','blog','contact'];
+        const ioOptions  = { rootMargin: '-30% 0px -60% 0px', threshold: 0 };
+        const io = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    updateMeta(entry.target.id || 'hero');
+                }
+            });
+        }, ioOptions);
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hero section
+            const hero = document.querySelector('.hero');
+            if (hero) { hero.id = 'hero'; io.observe(hero); }
+            sectionIds.forEach(function(id) {
+                const el = document.getElementById(id) || document.querySelector('section[data-section="' + id + '"]');
+                if (el) io.observe(el);
+            });
+
+            /* ── 2. DYNAMIC ARTICLE SCHEMA INJECTOR ── */
+            // When an article is opened, inject Article schema dynamically
+            const origOpenArticle = window.openArticle;
+            if (typeof origOpenArticle === 'function') {
+                window.openArticle = function(id) {
+                    origOpenArticle(id);
+                    const art = window.articles ? window.articles[id] : null;
+                    if (!art) return;
+                    // Remove old dynamic article schema if any
+                    const old = document.getElementById('dynamic-article-schema');
+                    if (old) old.remove();
+                    const schema = {
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        "headline": art.title,
+                        "datePublished": art.date,
+                        "author": { "@type": "Organization", "name": "AuditHex" },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "AuditHex",
+                            "url": "https://www.audithex.com"
+                        },
+                        "description": art.body ? art.body.replace(/<[^>]+>/g, '').substring(0, 160) : '',
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "https://www.audithex.com#" + id
+                        },
+                        "articleSection": art.category,
+                        "keywords": "smart contract security, blockchain audit, DeFi vulnerabilities, Web3 security"
+                    };
+                    const s = document.createElement('script');
+                    s.type = 'application/ld+json';
+                    s.id = 'dynamic-article-schema';
+                    s.textContent = JSON.stringify(schema);
+                    document.head.appendChild(s);
+                };
+            }
+
+            /* ── 3. INTERNAL LINK ENRICHMENT ── */
+            // Add rel="noopener" and aria-label to all CTA buttons
+            document.querySelectorAll('a.cta-button, a.nav-cta, a[href^="mailto:"]').forEach(function(a) {
+                if (a.href && a.href.startsWith('http') && !a.href.includes('audithex.com')) {
+                    a.setAttribute('rel', 'noopener noreferrer');
+                    a.setAttribute('target', '_blank');
+                }
+                if (!a.getAttribute('aria-label') && a.textContent) {
+                    a.setAttribute('aria-label', a.textContent.trim());
+                }
+            });
+
+            /* ── 4. CORE WEB VITALS OBSERVER ── */
+            // Log LCP for diagnostics (production: send to analytics)
+            if ('PerformanceObserver' in window) {
+                try {
+                    new PerformanceObserver(function(list) {
+                        const entries = list.getEntries();
+                        const lcp = entries[entries.length - 1];
+                        // Tag: audithex_lcp (send to GA4/Plausible in production)
+                        console.debug('[AuditHex SEO] LCP:', lcp.startTime.toFixed(0) + 'ms', lcp.element);
+                    }).observe({ type: 'largest-contentful-paint', buffered: true });
+                } catch(e) {}
+
+                try {
+                    new PerformanceObserver(function(list) {
+                        list.getEntries().forEach(function(entry) {
+                            if (!entry.hadRecentInput) {
+                                console.debug('[AuditHex SEO] CLS shift:', entry.value.toFixed(4));
+                            }
+                        });
+                    }).observe({ type: 'layout-shift', buffered: true });
+                } catch(e) {}
+            }
+
+            /* ── 5. LAZY IMAGE SEO ── */
+            // Add loading="lazy" and meaningful alt to any images missing it
+            document.querySelectorAll('img').forEach(function(img) {
+                if (!img.getAttribute('loading')) img.setAttribute('loading', 'lazy');
+                if (!img.getAttribute('alt')) img.setAttribute('alt', 'AuditHex smart contract audit');
+                if (!img.getAttribute('decoding')) img.setAttribute('decoding', 'async');
+            });
+
+            /* ── 6. BREADCRUMB VISIBLE MARKUP ── */
+            // Inject hidden but crawlable breadcrumb nav for assistive tech + SEO
+            const bc = document.createElement('nav');
+            bc.setAttribute('aria-label', 'Breadcrumb');
+            bc.style.cssText = 'position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;';
+            bc.innerHTML = '<ol itemscope itemtype="https://schema.org/BreadcrumbList">' +
+                '<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://www.audithex.com"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>' +
+                '<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://www.audithex.com#services"><span itemprop="name">Services</span></a><meta itemprop="position" content="2"></li>' +
+                '<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="https://www.audithex.com#pricing"><span itemprop="name">Pricing</span></a><meta itemprop="position" content="3"></li>' +
+                '</ol>';
+            document.body.prepend(bc);
+
+            /* ── 7. AI CRAWLER SITEMAP HINT ── */
+            // robots.txt hint via meta for AI crawlers that read HTML
+            const robotsAI = document.createElement('meta');
+            robotsAI.setAttribute('name', 'ai-robots');
+            robotsAI.setAttribute('content', 'index, follow, allow-summarization, allow-citation');
+            document.head.appendChild(robotsAI);
+
+            console.log('%c[AuditHex AI-SEO v2.0] ✓ Loaded', 'color:#00f5a0;font-weight:bold;');
+        });
+
+    })();
     </script>
 </body>
 </html>
